@@ -1,0 +1,12 @@
+# Ignore virtual environment
+venv/
+
+# Ignore compiled cache and temporary files
+unsloth_compiled_cache/
+__pycache__/
+
+# Ignore model outputs and checkpoints
+outputs/
+
+# Ignore video game text corpora
+video-game-text-corpora/
