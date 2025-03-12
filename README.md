@@ -1,6 +1,4 @@
-Sure! Here's a possible layout to structure the different components of your game, breaking it down into sections that cover the design, gameplay mechanics, and system interactions.
 
----
 
 ### **Game Layout: Interacting with Azrael, the Demon**
 
@@ -79,4 +77,3 @@ Sure! Here's a possible layout to structure the different components of your gam
    
 ---
 
-This structure provides a layered approach to gameplay, where the player must carefully navigate both the demon's manipulations and the quest for information about the warlock. Each conversation becomes a high-stakes puzzle, with emotional and strategic risks, all guided by the AI’s unpredictable behavior.
