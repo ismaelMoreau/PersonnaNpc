@@ -1,12 +1,92 @@
 # Ignore virtual environment
 venv/
+.venv/
+**/.venv/
+**/venv/
 
 # Ignore compiled cache and temporary files
-unsloth_compiled_cache/
-__pycache__/
+**/unsloth_compiled_cache/
+**/__pycache__/
 
 # Ignore model outputs and checkpoints
-outputs/
+**/outputs/
 
 # Ignore video game text corpora
-video-game-text-corpora/
+**/video-game-text-corpora/
+
+# Ignore notes 
+notes
+
+# Ignore model files
+**/models/
+
+# Unity specific ignores
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+*.apk
+*.unitypackage
+*.pidb
+*.pdb
+*.ilk
+*.rsp
+*.userprefs
+*.suo
+*.svd
+*.swp
+*.psess
+*.vsp
+*.vspx
+
+# Visual Studio
+.vscode/
+*.csproj
+*.sln
+*.user
+*.unityproj
+*.vcxproj
+*.pdb
+
+# Python specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+venv/
+.env
+
+# Pip and virtualenv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter notebooks
+*.ipynb_checkpoints
+
+# DeepSeek training outputs and caches
+Deepseek/outputs/
+Deepseek/unsloth_compiled_cache/
+
+# Docker
+*.tar
+
+# Misc
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Ignore nvidia a2f output
+output_*/ 
+
+# Ignore workflow output
+workflow_output/
+
+# Ignore piper output
+Piper/output/

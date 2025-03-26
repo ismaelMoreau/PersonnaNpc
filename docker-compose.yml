@@ -1,0 +1,48 @@
+services:
+  deepseek:
+    build: 
+      context: ./Deepseek
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./Deepseek:/app
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  piper:
+    build: 
+      context: ./Piper
+    ports:
+      - "8010:8010"
+    volumes:
+      - ./Piper:/app
+      - ./Piper/output:/app/output
+
+  workflow:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8020:8020"
+    volumes:
+      - .:/app
+      - ./workflow_output:/app/workflow_output
+      - ./Audio2Face-3D-Samples:/app/Audio2Face-3D-Samples
+    environment:
+      - NGC_API_KEY=${NGC_API_KEY}
+    network_mode: "host"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    depends_on:
+      - deepseek
+      - piper

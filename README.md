@@ -77,3 +77,34 @@
    
 ---
 
+Pipeline Overview
+
+Goal: Convert AI-generated text into speech and animate a 3D character’s face in Unity.
+Step-by-Step Process
+1. AI Persona Dialogue Generation (DeepSeek)
+
+    Fine-tune DeepSeek for your AI’s personality and conversational style.
+    Generate text responses dynamically based on player input.
+
+2. Text-to-Speech Conversion (Piper)
+
+    Feed DeepSeek’s generated text into Piper.
+    Output a WAV file containing the AI’s spoken dialogue.
+
+3. Facial Animation Processing (NVIDIA Audio2Face)
+
+    Input the generated WAV file into Audio2Face.
+    Generate animation keypoints (CSV) corresponding to facial expressions.
+    Save the CSV file with timestamped blendshape values.
+
+4. Animation Integration in Unity
+
+    Use a Unity script to parse the Audio2Face CSV file.
+    Apply blendshape keypoints to the 3D character’s facial rig.
+    Sync the animation with the audio playback.
+
+Automation & Optimization
+
+Batch Processing: Automate text-to-speech and animation generation to minimize delay.
+Real-time Adjustments: Implement a system to tweak expressions dynamically in Unity.
+Performance Optimization: Optimize blendshape updates to avoid performance overhead.
