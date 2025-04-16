@@ -3,6 +3,7 @@ venv/
 .venv/
 **/.venv/
 **/venv/
+**/*venv/
 
 # Ignore compiled cache and temporary files
 **/unsloth_compiled_cache/
