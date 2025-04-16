@@ -90,3 +90,9 @@ workflow_output/
 
 # Ignore piper output
 Piper/output/
+
+Piper/en_US-joe-medium.onnx
+Piper/en_US-joe-medium.onnx.json
+Piper/en_US-lessac-medium.onnx
+Piper/en_US-lessac-medium.onnx.json
+Audio2Face-3D-Samples/
